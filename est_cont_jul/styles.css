@@ -1,0 +1,399 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #0062cc;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('https://eradigitalweb.com.ar/wp-content/uploads/2021/01/Estudio-Contable-Servicios-de-contabilidad.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero h2,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services,
+.about,
+.contact,
+.schedule-appointment,
+.mission-vision-strength {
+    margin-bottom: 40px;
+}
+
+.services h2,
+.about h2,
+.contact h2,
+.schedule-appointment h2,
+.mission-vision-strength h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .service-item {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    flex: 0 0 48%;
+    box-sizing: border-box;
+}
+
+.about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+}
+
+.about img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mission-vision-strength {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mission-vision-strength div {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision-strength h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.schedule-appointment {
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-appointment h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.schedule-appointment p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    background-color: #0056b3;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    background-color: #003d7a;
+}
+
+.testimonials {
+    background-color: #e9ecef;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    width: 100%;
+    /* Asegúrate de que el contenedor ocupe todo el espacio disponible */
+}
+
+.testimonial-item {
+    flex: 0 0 50%;
+    /* Esto asegura que dos testimonios ocupen el 100% del contenedor */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.clients {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.clients h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.client-logos img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.footer .footer-top {
+    padding-bottom: 20px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .footer-col {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer .footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-col p {
+    margin: 0;
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom .copyright {
+    font-size: 14px;
+    margin: 0;
+    color: #ccc;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Para que se adapte en pantallas pequeñas */
+    gap: 20px;
+    /* Espacio entre columnas */
+}
+
+.contact-info {
+    flex: 1;
+    font-size: 18px;
+    /* Tamaño de texto más grande */
+}
+
+.contact-form-box {
+    flex: 1;
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-form-box form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form-box form input,
+.contact-form-box form select,
+.contact-form-box form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form-box form button.submit-button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+.contact-form-box form button.submit-button:hover {
+    background-color: #004494;
+}

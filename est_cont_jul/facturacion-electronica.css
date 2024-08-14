@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-text,
+.benefits,
+.features {
+    margin-bottom: 20px;
+}
+
+.intro-text h2,
+.benefits h3,
+.features h3 {
+    color: #333;
+}
+
+.intro-text p,
+.benefits ul,
+.features ul {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.benefits ul,
+.features ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.cta-facturacion {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.cta-facturacion .button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-top {
+    padding-bottom: 20px;
+}
+
+.footer-col {
+    width: 33.33%;
+    float: left;
+    padding: 0 20px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    clear: both;
+}
+
+.copyright {
+    margin-top: 20px;
+}
